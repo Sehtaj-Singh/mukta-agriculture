@@ -375,3 +375,171 @@
     font-size: 1rem;
   }
 }
+
+
+/* ===============================
+   MOBILE NAV MODAL
+================================ */
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 88vw;
+  height: 100vh;
+
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+
+  transform: translateY(-100%);
+  transition: transform 0.35s ease;
+
+  z-index: 999;
+  padding: 4vh 6vw;
+}
+
+/* Active state */
+.mobile-nav.active {
+  transform: translateY(0);
+}
+
+/* Header */
+.mobile-nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6vh;
+  font-size: 3vh;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 600;
+  color: #1f7a3f;
+}
+
+/* Close button */
+.close-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: #1f7a3f;
+  cursor: pointer;
+}
+
+/* Links */
+.mobile-nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+
+.mobile-nav-links a {
+  font-family: "Inter", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #111827;
+  text-decoration: none;
+}
+
+/* Hide modal on desktop */
+@media (min-width: 768px) {
+  .mobile-nav {
+    display: none;
+  }
+}
+
+/* ===============================
+   FOOTER
+================================ */
+
+.site-footer {
+  background: linear-gradient(
+    180deg,
+    #0f172a 0%,
+    #0b1220 100%
+  );
+  color: #e5e7eb;
+  padding-top: 8vh;
+}
+
+/* Top section */
+.footer-top {
+  display: grid;
+  gap: 6vh;
+  padding: 0 6vw 6vh;
+}
+
+/* Columns */
+.footer-col h3 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #22c55e;
+  margin-bottom: 0.8rem;
+}
+
+.footer-col h4 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+/* Text */
+.footer-col p {
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #cbd5e1;
+  max-width: 36ch;
+}
+
+/* Lists */
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  font-family: "Inter", sans-serif;
+  font-size: 0.88rem;
+  color: #cbd5e1;
+  margin-bottom: 0.6rem;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: #cbd5e1;
+}
+
+.footer-col ul li a:hover {
+  color: #22c55e;
+}
+
+/* Contact list spacing */
+.contact-list li {
+  margin-bottom: 0.8rem;
+}
+
+/* Bottom bar */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: center;
+  padding: 2vh 6vw;
+  font-family: "Inter", sans-serif;
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+
+@media (min-width: 768px) {
+  .footer-top {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
