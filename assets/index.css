@@ -182,3 +182,196 @@
   text-decoration: none;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
+
+
+/* ===============================
+   PRODUCTS SECTION
+================================ */
+
+.products-section {
+  padding: 8vh 0;
+  background: #ffffff;
+}
+
+/* Header */
+.products-header {
+  text-align: center;
+  padding: 0 6vw 6vh;
+}
+
+.products-header h2 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111827; /* requested heading color */
+  margin-bottom: 0.75rem;
+}
+
+.products-header p {
+  font-family: "Inter", sans-serif;
+  font-size: 0.95rem;
+  color: #4b5563;
+  max-width: 46ch;
+  margin: 0 auto;
+}
+
+/* ===============================
+   GRID
+================================ */
+
+.products-grid {
+  display: grid;
+  gap: 5vh;
+  padding: 0 2.5vw;
+}
+
+/* Mobile: single card, 95vw */
+.product-card {
+  width: 85vw;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  padding: 2vh 3vw  ;
+}
+
+/* Image placeholder */
+.product-image img {
+  width: 100%;
+  border-radius: 14px;
+  margin-bottom: 1rem;
+}
+
+/* Title */
+.product-card h3 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.4rem;
+}
+
+/* Description */
+.product-card p {
+  font-family: "Inter", sans-serif;
+  font-size: 0.85rem;
+  color: #4b5563;
+  line-height: 1.5;
+  margin-bottom: 1.2rem;
+}
+
+/* Footer */
+.product-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Price */
+.price {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #1f7a3f;
+}
+
+/* Button */
+.enquire-btn {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+
+  padding: 0.5rem 1.2rem;
+  border-radius: 999px;
+  border: none;
+
+  background: linear-gradient(180deg, #1f7a3f, #166532);
+  color: #ffffff;
+  cursor: pointer;
+
+  box-shadow: 0 6px 14px rgba(31, 122, 63, 0.35);
+}
+
+/* ===============================
+   TABLET & DESKTOP
+================================ */
+
+@media (min-width: 768px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .product-card {
+    width: 40vw;
+  }
+}
+
+@media (min-width: 1100px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* ===============================
+   ABOUT SECTION
+================================ */
+
+.about-section {
+  padding: 10vh 0;
+  background: #f9fafb;
+}
+
+.about-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 6vw;
+}
+
+/* Heading */
+.about-wrapper h2 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 1.2rem;
+}
+
+/* Intro paragraph */
+.about-intro {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1f7a3f;
+  line-height: 1.6;
+  margin-bottom: 1.6rem;
+}
+
+/* Body text */
+.about-text {
+  font-family: "Inter", sans-serif;
+  font-size: 0.95rem;
+  color: #374151;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+}
+
+/* ===============================
+   RESPONSIVE TUNING
+================================ */
+
+@media (min-width: 768px) {
+  .about-wrapper h2 {
+    font-size: 2.3rem;
+  }
+
+  .about-intro {
+    font-size: 1.05rem;
+  }
+
+  .about-text {
+    font-size: 1rem;
+  }
+}
