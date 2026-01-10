@@ -3,32 +3,28 @@
   padding: 0;
 }
 
+
 /* =========================
    HEADER (Glassmorphism)
 ========================= */
 
 .site-header {
   position: fixed;
-  top: 2vh;
-  margin-left: 4vw;
+  top: 0vh;
   padding: 1.5vh 3vw;
-  width: 86vw;
-
+  width: 94vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(14px);
-
-  border-radius: 16px;
   z-index: 100;
 }
 
 /* Logo */
 .logo {
-  font-size: 1rem;
+  font-size: 2vh;
   font-weight: 600;
   color: #1f7a3f;
   white-space: nowrap;
@@ -129,6 +125,38 @@
   width: 100vw;
   height: auto;
   display: block;
+}
+.hero-para {
+  position: absolute;
+  bottom: 2vh;
+
+  width: 80vw;
+  padding: 1.6vh 4vw;
+  margin-left: 6vw;
+
+  background: rgba(255, 255, 255, 0.818);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+
+  font-family: "Inter", sans-serif;
+}
+
+#p-1{
+  color: #1f7a3f;
+  font-size: 2.2vh;
+  margin-bottom: 0.5vh;
+}
+
+#p-2{
+  color: #4b4b4b;
+  font-size: 1.6vh;
 }
 
 /* ===============================
@@ -347,6 +375,14 @@
   color: #1f7a3f;
   line-height: 1.6;
   margin-bottom: 1.6rem;
+  
+}
+
+.about-wrapper img{
+  width: 90vw;
+  height: auto;
+  aspect-ratio: 4505/3712;
+  margin-bottom: 4vh;
 }
 
 /* Body text */
