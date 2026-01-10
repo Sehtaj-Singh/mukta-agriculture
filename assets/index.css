@@ -181,6 +181,7 @@
 .hero-content h1 {
   line-height: 1.15;
   font-weight: 800;
+  letter-spacing: 1px;
   color: #111827 ;
   margin-bottom: 1.2rem;
 }
@@ -236,10 +237,12 @@
 
 .products-header h2 {
   font-family: "IBM Plex Sans", sans-serif;
-  font-size: 2rem;
-  font-weight: 700;
-  color: #111827; /* requested heading color */
-  margin-bottom: 0.75rem;
+  font-size: 4.2vh;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #111827;
+  margin-bottom: 2vh;
+  text-align: center;
 }
 
 .products-header p {
@@ -368,10 +371,12 @@
 /* Heading */
 .about-wrapper h2 {
   font-family: "IBM Plex Sans", sans-serif;
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 4.2vh;
+  font-weight: 800;
+  letter-spacing: 1px;
   color: #111827;
-  margin-bottom: 1.2rem;
+  margin-bottom: 2vh;
+  text-align: center;
 }
 
 /* Intro paragraph */
@@ -382,7 +387,8 @@
   color: #1f7a3f;
   line-height: 1.6;
   margin-bottom: 1.6rem;
-  
+  display: flex;
+  flex-direction: column;
 }
 
 .about-wrapper img{
@@ -390,6 +396,7 @@
   height: auto;
   aspect-ratio: 4505/3712;
   margin-bottom: 4vh;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.35);
 }
 
 /* Body text */
