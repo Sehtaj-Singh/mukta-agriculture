@@ -173,7 +173,7 @@
 .hero-content {
   position: relative;
   z-index: 2;
-  padding: 2vh 6vw 6vh;
+  padding: 3vh 6vw 6vh;
   background: transparent;
 }
 
@@ -574,6 +574,26 @@
   font-size: 0.8rem;
   color: #9ca3af;
 }
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+.contact-list i {
+  color: #22c55e;
+  font-size: 1rem;
+}
+
 
 /* ===============================
    RESPONSIVE
