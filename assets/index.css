@@ -33,7 +33,7 @@
 }
 
 .logo img{
-  width: 12vw;
+  width: 65vw;
   margin-right: 5vw;
 }
 
@@ -525,6 +525,11 @@
   font-weight: 700;
   color: #22c55e;
   margin-bottom: 0.8rem;
+}
+
+.footer-col img{
+  width: 65vw;
+  margin-bottom: 2vh;
 }
 
 .footer-col h4 {
