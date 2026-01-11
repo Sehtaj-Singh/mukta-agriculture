@@ -75,7 +75,7 @@
     </div>
   </section>
 
-  <section class="products-section">
+  <section id="products" class="products-section">
     <div class="products-header">
       <h2>Our Products</h2>
       <p>
@@ -84,39 +84,38 @@
       </p>
     </div>
 
-    <div class="products-grid">
-      <!-- Card 1 -->
-      <div class="product-card">
-        <div class="product-image">
-          <img src="assets/images/rotavator.png">
-        </div>
-        <h3>Heavy Duty Rotavator</h3>
-        <p>
-          Professional grade rotavator for soil preparation, suitable for all soil types.
-        </p>
-        <div class="product-footer">
-
-          <button class="enquire-btn">Enquire Now</button>
-        </div>
+    <!-- Card 1 -->
+    <div class="product-card" data-modal="rotavator">
+      <div class="product-image">
+        <img src="assets/images/rotavator.png">
       </div>
-
-      <!-- Card 2 -->
-      <div class="product-card">
-        <div class="product-image">
-          <img src="assets/images/cultivator.png">
-        </div>
-        <h3>Culture Cultivator</h3>
-        <p>
-          High-efficiency cultivator for uniform soil preparation.
-        </p>
-        <div class="product-footer">
-
-          <button class="enquire-btn">Enquire Now</button>
-        </div>
+      <h3>Heavy Duty Rotavator</h3>
+      <p>
+        Professional grade rotavator for soil preparation, suitable for all soil types.
+      </p>
+      <div class="product-footer">
+        <button class="enquire-btn">Enquire Now</button>
       </div>
+    </div>
 
-      <!-- Card 3 -->
-      <!-- <div class="product-card">
+
+    <!-- Card 2 -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="assets/images/cultivator.png">
+      </div>
+      <h3>Culture Cultivator</h3>
+      <p>
+        High-efficiency cultivator for uniform soil preparation.
+      </p>
+      <div class="product-footer">
+
+        <button class="enquire-btn">Enquire Now</button>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <!-- <div class="product-card">
         <div class="product-image">
           <img src="assets/images/product.jpg">
         </div>
@@ -130,8 +129,8 @@
         </div>
       </div> -->
 
-      <!-- Card 4 -->
-      <!-- <div class="product-card">
+    <!-- Card 4 -->
+    <!-- <div class="product-card">
         <div class="product-image">
           <img src="assets/images/product.jpg">
         </div>
@@ -303,6 +302,52 @@
       <a href="#contact">Contact</a>
     </nav>
   </aside>
+
+  <!-- PRODUCT MODAL -->
+  <div class="product-modal" id="productModal">
+    <div class="product-modal-backdrop"></div>
+
+    <div class="product-modal-content">
+      <button class="product-modal-close" id="closeProductModal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="product-modal-body">
+
+        <!-- IMAGE SLIDER -->
+        <div class="modal-slider" id="modalSlider">
+
+          <h3 id="modal-title">Heavy Duty Rotavator</h3>
+
+          <button class="slider-btn prev" aria-label="Previous image">
+           <i class="fa-solid fa-angle-left"></i>
+
+          </button>
+
+          <div class="slider-track">
+            <img src="assets/images/rotavator-1.png" class="slide active">
+            <img src="assets/images/rotavator-2.png" class="slide">
+            <img src="assets/images/rotavator-3.png" class="slide">
+          </div>
+
+          <button class="slider-btn next" aria-label="Next image">
+            <i class="fa-solid fa-angle-right"></i>
+
+          </button>
+
+        </div>
+        <!-- /IMAGE SLIDER -->
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="whatsapp-float">
+    <a href="https://wa.me/919066391100" target="_blank" aria-label="Chat on WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+  </div>
 
 
 
