@@ -32,9 +32,13 @@
   align-items: center;
 }
 
-.logo img{
-  width: 65vw;
-  margin-right: 5vw;
+#i-1{
+  width: 15vw;
+  margin-right: 3vw;
+}
+
+#i-2{
+width: 50vw;
 }
 
 /* Desktop Nav */
@@ -528,7 +532,7 @@
 }
 
 .footer-col img{
-  width: 65vw;
+  width: 75vw;
   margin-bottom: 2vh;
 }
 
