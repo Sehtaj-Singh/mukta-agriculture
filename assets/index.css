@@ -1,16 +1,15 @@
 * {
-  margin: 0%;
+  margin: 0;
   padding: 0;
 }
 
-/* =========================
-   HEADER (Glassmorphism)
-========================= */
-
+/* =========================================================
+   HEADER (GLASSMORPHISM)
+========================================================= */
 .site-header {
   position: fixed;
   top: 0vh;
-  padding: 1.5vh 3vw;
+  padding: 1vh 3vw;
   width: 94vw;
   display: flex;
   align-items: center;
@@ -21,7 +20,6 @@
   z-index: 100;
 }
 
-/* Logo */
 .logo {
   font-size: 2vh;
   font-weight: 600;
@@ -33,14 +31,13 @@
 
 #i-1 {
   width: 15vw;
-  margin-right: 3vw;
+  margin-right: 2vw;
 }
 
 #i-2 {
   width: 50vw;
 }
 
-/* Desktop Nav */
 .nav-links {
   display: none;
   gap: 28px;
@@ -53,7 +50,6 @@
   color: #0f172a;
 }
 
-/* Mobile Menu Button */
 .menu-btn {
   background: transparent;
   border: none;
@@ -62,13 +58,27 @@
   cursor: pointer;
   margin-right: 2vw;
 }
-
-/* =========================
-   DESKTOP VIEW
-========================= */
 @media (min-width: 768px) {
+  #i-1 {
+    width: 12vw;
+  }
+  #i-2 {
+    width: 40vw;
+  }
+  .menu-btn {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 1024px) {
   .menu-btn {
     display: none;
+  }
+  #i-1 {
+    width: 10vw;
+  }
+  #i-2 {
+    width: 35vw;
   }
 
   .nav-links {
@@ -76,23 +86,15 @@
   }
 }
 
-/* ===============================
-   HERO – CORRECT GLASS BACKGROUND
-================================ */
-
-/* Heading */
-/* ===============================
-   TYPOGRAPHY SYSTEM
-================================ */
-
-/* Headings */
+/* =========================================================
+   HERO SECTION
+========================================================= */
 .hero-content h1,
 .section-title {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 4.5vh;
 }
 
-/* Paragraphs & subtitles */
 .hero-content p,
 .subtitle,
 .nav-links a {
@@ -100,7 +102,6 @@
   font-weight: 400;
 }
 
-/* Buttons & numbers */
 .hero-actions a,
 .btn-primary,
 .btn-secondary,
@@ -111,20 +112,17 @@
 
 .hero {
   position: relative;
-
   background: linear-gradient(
     180deg,
     rgba(31, 122, 63, 0.5) 0%,
-    rgba(31, 122, 63, 0.5) 30%,
+    rgba(31, 122, 63, 0.4) 30%,
     rgba(245, 250, 247, 0.95) 60%,
     #ffffff 100%
   );
-
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
 }
 
-/* IMAGE (NO BLUR AT ALL) */
 .hero-image {
   position: relative;
   z-index: 1;
@@ -135,24 +133,20 @@
   height: auto;
   display: block;
 }
+
 .hero-para {
   position: absolute;
   bottom: 2vh;
-
   width: 80vw;
   padding: 1.6vh 4vw;
   margin-left: 6vw;
-
   background: rgba(255, 255, 255, 0.818);
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(14px);
-
   border-radius: 14px;
   border: 1px solid rgba(255, 255, 255, 0.35);
-
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12),
     inset 0 1px 0 rgba(255, 255, 255, 0.4);
-
   font-family: "Inter", sans-serif;
 }
 
@@ -168,18 +162,12 @@
   font-size: 1.6vh;
 }
 
-/* ===============================
-   HERO CONTENT
-================================ */
-
 .hero-content {
   position: relative;
   z-index: 2;
   padding: 3vh 6vw 6vh;
-  background: transparent;
 }
 
-/* Title */
 .hero-content h1 {
   line-height: 1.15;
   font-weight: 800;
@@ -188,16 +176,14 @@
   margin-bottom: 1.2rem;
 }
 
-/* Paragraph */
 .hero-content p {
   font-size: 0.95rem;
   line-height: 1.6;
   color: #4b4b4b;
-  max-width: 38ch;
+  width: 75vw;
   margin-bottom: 1.8rem;
 }
 
-/* Buttons */
 .hero-actions {
   display: flex;
   gap: 1rem;
@@ -221,16 +207,51 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
-/* ===============================
-   PRODUCTS SECTION
-================================ */
+@media (min-width: 768px) {
+  .hero-image img {
+    width: 100vw;
+    height: 50vh;
+    object-fit: cover;
+    object-position: bottom;
+  }
+  .hero-content h1,
+  .section-title {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 3.9vh;
+  }
+  .hero-content h1 {
+    margin-bottom: 1.9rem;
+  }
+  .hero-content p {
+    font-size: 1.4rem;
+    margin-bottom: 2.5rem;
+  }
+  .btn-primary {
+    font-size: 2vh;
+    margin-right: 3vw;
+  }
+  .btn-secondary {
+    font-size: 2vh;
+  }
+  .hero {
+    background: linear-gradient(
+      180deg,
+      rgba(31, 122, 63, 0.5) 0%,
+      rgba(31, 122, 63, 0.4) 50%,
+      rgba(245, 250, 247, 0.95) 80%,
+      #ffffff 100%
+    );
+  }
+}
 
+/* =========================================================
+   PRODUCTS SECTION
+========================================================= */
 .products-section {
   padding: 8vh 0;
   background: #ffffff;
 }
 
-/* Header */
 .products-header {
   text-align: center;
   padding: 0 6vw 6vh;
@@ -243,7 +264,6 @@
   letter-spacing: 1px;
   color: #111827;
   margin-bottom: 2vh;
-  text-align: center;
 }
 
 .products-header p {
@@ -254,35 +274,30 @@
   margin: 0 auto;
 }
 
-/* ===============================
-   GRID
-================================ */
-
 .products-grid {
   display: grid;
-  gap: 5vh;
-  padding: 0 2.5vw;
+  
 }
 
-/* Mobile: single card, 95vw */
 .product-card {
-  width: 85vw;
-  margin: 0 auto;
+  width: 84vw;
   background: #ffffff;
   border-radius: 18px;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
   padding: 2vh 3vw;
+  margin-left: 5vw;
   margin-bottom: 3vh;
 }
 
-/* Image placeholder */
 .product-image img {
   width: 100%;
   border-radius: 14px;
   margin-bottom: 1rem;
 }
+.products-section a{
+  text-decoration: none;
+}
 
-/* Title */
 .product-card h3 {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 1.05rem;
@@ -291,7 +306,6 @@
   margin-bottom: 0.4rem;
 }
 
-/* Description */
 .product-card p {
   font-family: "Inter", sans-serif;
   font-size: 0.85rem;
@@ -300,14 +314,12 @@
   margin-bottom: 1.2rem;
 }
 
-/* Footer */
 .product-footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-/* Price */
 .price {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
@@ -315,26 +327,18 @@
   color: #1f7a3f;
 }
 
-/* Button */
 .enquire-btn {
   font-family: "Poppins", sans-serif;
   font-size: 0.8rem;
   font-weight: 500;
-
   padding: 0.5rem 1.2rem;
   border-radius: 999px;
   border: none;
-
   background: linear-gradient(180deg, #1f7a3f, #166532);
   color: #ffffff;
   cursor: pointer;
-
   box-shadow: 0 6px 14px rgba(31, 122, 63, 0.35);
 }
-
-/* ===============================
-   TABLET & DESKTOP
-================================ */
 
 @media (min-width: 768px) {
   .products-grid {
@@ -342,9 +346,23 @@
     max-width: 1100px;
     margin: 0 auto;
   }
+  .products-header p {
+    font-size: 1.5rem;
+  }
+
+  .products-grid {
+  display: grid;
+}
 
   .product-card {
-    width: 40vw;
+    margin-left: 3vw;
+    width: 38vw;
+  }
+  .product-card h3{
+    font-size: 1.5rem;
+  }
+  .product-card p {
+    font-size: 1.3rem;
   }
 }
 
@@ -354,10 +372,9 @@
   }
 }
 
-/* ===============================
+/* =========================================================
    ABOUT SECTION
-================================ */
-
+========================================================= */
 .about-section {
   padding: 10vh 0;
   background: #f9fafb;
@@ -369,7 +386,6 @@
   padding: 0 6vw;
 }
 
-/* Heading */
 .about-wrapper h2 {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 4.2vh;
@@ -380,7 +396,6 @@
   text-align: center;
 }
 
-/* Intro paragraph */
 .about-intro {
   font-family: "Inter", sans-serif;
   font-size: 1rem;
@@ -394,13 +409,11 @@
 
 .about-wrapper img {
   width: 90vw;
-  height: auto;
   aspect-ratio: 4505/3712;
   margin-bottom: 4vh;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.35);
 }
 
-/* Body text */
 .about-text {
   font-family: "Inter", sans-serif;
   font-size: 0.95rem;
@@ -409,32 +422,65 @@
   margin-bottom: 1.2rem;
 }
 
+@media (min-width: 768px) {
+  .about-wrapper h2 {
+    font-size: 3rem;
+    margin-bottom: 4vh;
+  }
+
+  .about-intro {
+    font-size: 1.05rem;
+    flex-direction: row;
+  }
+
+  .about-text {
+    font-size: 1rem;
+  }
+  .about-section {
+    padding: 5vh 0;
+  }
+
+  .about-intro p {
+    width: 40vw;
+    font-size: 1.4rem;
+    margin-top: 2vh;
+    margin-left: 5vw;
+    text-align: center;
+  }
+
+  .about-wrapper img {
+    width: 40vw;
+  }
+  .about-text {
+    font-size: 1.4rem;
+  }
+}
+
+/* =========================================================
+   FEATURES SECTION
+========================================================= */
 .features-section {
-  padding: 60px 5px;
+  padding: 40px 5px;
 }
 
 .features-grid {
-  max-width: 1200px;
   margin: 0 auto;
-
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .feature-item {
   text-align: center;
+  padding: 30px 0;
 }
 
 .feature-icon {
   width: 56px;
   height: 56px;
   margin: 0 auto 14px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   border-radius: 50%;
   background: rgba(34, 197, 94, 0.12);
 }
@@ -453,65 +499,52 @@
 
 .feature-item p {
   font-size: 0.85rem;
-  font-family: "inter", sans-serif;
+  font-family: "Inter", sans-serif;
   color: #6b7280;
   line-height: 1.4;
 }
 
-/* ✅ Mobile layout: 2 + 2 */
-@media (max-width: 768px) {
-  .features-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
-  }
-}
-
-/* ===============================
-   RESPONSIVE TUNING
-================================ */
-
 @media (min-width: 768px) {
-  .about-wrapper h2 {
-    font-size: 2.3rem;
+  .feature-item {
+    padding: 30px 20px;
   }
-
-  .about-intro {
-    font-size: 1.05rem;
+  .feature-icon {
+    width: 76px;
+    height: 76px;
   }
-
-  .about-text {
-    font-size: 1rem;
+  .feature-icon i {
+    font-size: 2rem;
+  }
+  .feature-item h4 {
+    font-size: 1.4rem;
+  }
+  .feature-item p {
+    font-size: 1.2rem;
   }
 }
 
-/* ===============================
+/* =========================================================
    MOBILE NAV MODAL
-================================ */
-
+========================================================= */
 .mobile-nav {
   position: fixed;
   top: 0;
   left: 0;
   width: 88vw;
   height: 100vh;
-
   background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-
   transform: translateY(-100%);
   transition: transform 0.35s ease;
-
   z-index: 999;
   padding: 4vh 6vw;
 }
 
-/* Active state */
 .mobile-nav.active {
   transform: translateY(0);
 }
 
-/* Header */
 .mobile-nav-header {
   display: flex;
   justify-content: space-between;
@@ -523,7 +556,6 @@
   color: #1f7a3f;
 }
 
-/* Close button */
 .close-btn {
   background: transparent;
   border: none;
@@ -532,7 +564,6 @@
   cursor: pointer;
 }
 
-/* Links */
 .mobile-nav-links {
   display: flex;
   flex-direction: column;
@@ -547,22 +578,29 @@
   text-decoration: none;
 }
 
-/* Hide modal on desktop */
 @media (min-width: 768px) {
-  .mobile-nav {
-    display: none;
+  .close-btn {
+    font-size: 2rem;
+  }
+  .mobile-nav-links a{
+    font-size: 1.5rem;
   }
 }
 
-/* ===============================
-   PRODUCT MODAL (GLASS)
-================================ */
+@media (min-width: 1024px) {
+  .mobile-nav {
+    display: none;
+  }
+  
+}
 
+/* =========================================================
+   PRODUCT MODAL (GLASS)
+========================================================= */
 .product-modal {
   position: fixed;
   inset: 0;
   z-index: 1000;
-
   display: none;
   align-items: center;
   justify-content: center;
@@ -572,7 +610,6 @@
   display: block;
 }
 
-/* Backdrop */
 .product-modal-backdrop {
   position: absolute;
   inset: 0;
@@ -580,29 +617,23 @@
   backdrop-filter: blur(4px);
 }
 
-/* Modal box */
 .product-modal-content {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-
   width: 88vw;
-  max-width: none;
   height: 80vh;
   background: rgba(255, 255, 255, 0.88);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
-
   border-radius: 22px 22px 0 0;
   padding: 4vh 6vw;
-
-  box-shadow:
-    0 -20px 40px rgba(0, 0, 0, 0.25),
+  box-shadow: 0 -20px 40px rgba(0, 0, 0, 0.25),
     inset 0 1px 0 rgba(255, 255, 255, 0.5);
-
   animation: modalSlideUp 0.35s ease;
 }
+
 @keyframes modalSlideUp {
   from {
     transform: translateY(100%);
@@ -612,14 +643,10 @@
   }
 }
 
-
-
-/* Close button */
 .product-modal-close {
   position: absolute;
   top: 14px;
   right: 14px;
-
   background: transparent;
   border: none;
   font-size: 1.3rem;
@@ -627,33 +654,18 @@
   color: #0f172a;
 }
 
-/* Empty body placeholder */
 .product-modal-body {
   min-height: 25vh;
 }
 
-/* Animation */
-@keyframes modalFadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(25px) scale(0.98);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
-
-/* ===============================
+/* =========================================================
    MODAL IMAGE SLIDER
-================================ */
-
+========================================================= */
 .modal-slider {
   position: relative;
   width: 100%;
   height: 32vh;
   overflow: hidden;
-  
 }
 
 .slider-track {
@@ -670,36 +682,29 @@
   object-fit: contain;
 }
 
-.slide.active {
-  opacity: 1;
-}
-
-#modal-title{
+#modal-title {
   text-align: center;
   font-size: 3vh;
   color: #0f172a;
   font-family: "IBM Plex Sans", sans-serif;
 }
 
-/* Navigation buttons */
 .slider-btn {
   position: absolute;
   top: 60%;
   transform: translateY(-50%);
   background: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(10px);
-
   border: none;
   width: 42px;
   height: 42px;
   border-radius: 50%;
   cursor: pointer;
-   z-index: 10;
+  z-index: 10;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
 }
 
 .slider-btn i {
@@ -715,25 +720,30 @@
   right: 10px;
 }
 
-
-/* ===============================
+/* =========================================================
    FOOTER
-================================ */
-
+========================================================= */
 .site-footer {
   background: linear-gradient(180deg, #0f172a 0%, #0b1220 100%);
   color: #e5e7eb;
   padding-top: 4vh;
 }
 
-/* Top section */
-.footer-top {
-  display: grid;
-  gap: 6vh;
-  padding: 0 6vw 6vh;
+#footer-links {
+  display: flex;
+  margin-bottom: 3vh;
+  justify-content: space-between;
 }
 
-/* Columns */
+.brand {
+  padding-bottom: 5vh;
+}
+
+.footer-top {
+  gap: 6vh;
+  padding: 0 6vw 3vh;
+}
+
 .footer-col h3 {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 1.3rem;
@@ -755,17 +765,14 @@
   margin-bottom: 1rem;
 }
 
-/* Text */
 .footer-col p {
   font-family: "Inter", sans-serif;
   font-size: 0.9rem;
   line-height: 1.6;
-
   color: #cbd5e1;
   text-align: center;
 }
 
-/* Lists */
 .footer-col ul {
   list-style: none;
   padding: 0;
@@ -788,12 +795,10 @@
   color: #22c55e;
 }
 
-/* Contact list spacing */
 .contact-list li {
   margin-bottom: 0.8rem;
 }
 
-/* Bottom bar */
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   text-align: center;
@@ -827,30 +832,77 @@
   flex-direction: column;
   align-items: center;
 }
+
 #f-1 {
   width: 40vw;
 }
+
 #f-2 {
   width: 70vw;
 }
 
-/* ===============================
-   RESPONSIVE
-================================ */
-
 @media (min-width: 768px) {
   .footer-top {
-    grid-template-columns: repeat(4, 1fr);
     max-width: 1200px;
     margin: 0 auto;
   }
+  .footer-img {
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-col p {
+    font-size: 1.3rem;
+  }
+  .footer-col ul li {
+    font-size: 1.2rem;
+    margin-bottom: 0.6rem;
+  }
+  .footer-col h4 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+
+  #f-1 {
+    width: 15vw;
+  }
+  #f-2 {
+    width: 50vw;
+  }
+  .footer-col ul li a {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .footer-col h4 {
+    font-size: 1.65rem;
+  }
+
+  .footer-contact {
+    text-align: center;
+  }
+
+  .footer-contact .contact-list li {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-contact .contact-list a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #cbd5e1;
+    text-decoration: none;
+  }
+  .footer-bottom {
+    font-size: 1.3rem;
+  }
 }
 
-
-/* ===============================
+/* =========================================================
    WHATSAPP FLOAT BUTTON
-================================ */
-
+========================================================= */
 .whatsapp-float {
   position: fixed;
   bottom: 30px;
@@ -861,18 +913,14 @@
 .whatsapp-float a {
   width: 56px;
   height: 56px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   background: #17ba38;
   color: #ffffff;
-
   border-radius: 50%;
   font-size: 1.8rem;
   text-decoration: none;
-
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }

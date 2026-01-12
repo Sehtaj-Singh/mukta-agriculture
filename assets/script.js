@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-
   /* ===============================
      MOBILE NAV
   ================================ */
@@ -17,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
       mobileNav.classList.remove("active");
     });
 
-    navLinks.forEach(link => {
+    navLinks.forEach((link) => {
       link.addEventListener("click", () => {
         mobileNav.classList.remove("active");
       });
@@ -34,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let currentSlide = 0;
 
-  productCards.forEach(card => {
+  productCards.forEach((card) => {
     card.addEventListener("click", () => {
       // Only first card opens modal
       if (!card.dataset.modal) return;
@@ -113,4 +112,6 @@ document.addEventListener("DOMContentLoaded", () => {
     updateSlider();
   }
 
+  // Dynamic footer year
+  document.getElementById("currentYear").textContent = new Date().getFullYear();
 });
