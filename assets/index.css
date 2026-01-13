@@ -93,10 +93,10 @@ html {
     display: none;
   }
   #i-1 {
-    width: 10vw;
+    width: 6vw;
   }
   #i-2 {
-    width: 35vw;
+    width: 20vw;
   }
 
   .nav-links {
@@ -262,6 +262,52 @@ html {
   }
 }
 
+@media (min-width: 1024px) {
+  .hero {
+    display: flex;
+    padding-bottom: 8vh;
+    padding-top: 12vh;
+    background: linear-gradient(
+      90deg,
+      rgba(31, 122, 63, 0.2) 0%,
+      rgba(31, 122, 63, 0.2) 40%,
+      rgba(245, 250, 247, 0.95) 60%,
+      #ffffff 100%
+    );
+  }
+  .hero-image img {
+    width: 44vw;
+    margin-left: 3vw;
+    height: auto;
+  }
+  .hero-para {
+    width: 36vw;
+    padding: 1.6vh 2vw;
+    margin-left: 5vw;
+    bottom: 5vh;
+  }
+  #p-1 {
+    font-size: 2.6vh;
+  }
+
+  #p-2 {
+    font-size: 2.2vh;
+  }
+  .hero-content h1 {
+    font-size: 6.5vh;
+    width: 30vw;
+  }
+  .hero-content p {
+    width: 35vw;
+  }
+  .hero-content {
+    padding: 3vh 5vw 6vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
 /* =========================================================
    PRODUCTS SECTION
 ========================================================= */
@@ -353,8 +399,6 @@ html {
 @media (min-width: 768px) {
   .products-grid {
     grid-template-columns: repeat(2, 1fr);
-    max-width: 1100px;
-    margin: 0 auto;
   }
   .products-header p {
     font-size: 1.5rem;
@@ -376,10 +420,25 @@ html {
   }
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1024px) {
   .products-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
+  .products-header h2{
+    font-size: 6vh;
+  }
+  .products-header{
+    margin-bottom: 4vh;
+  }
+  .product-card {
+    margin-left: 3vw;
+    width: 24vw;
+    padding: 2vh 2vw;
+  }
+  .product-card p {
+    font-size: 1rem;
+  }
+  
 }
 
 /* =========================================================
@@ -391,7 +450,6 @@ html {
 }
 
 .about-wrapper {
-  max-width: 900px;
   margin: 0 auto;
   padding: 0 6vw;
 }
@@ -465,6 +523,30 @@ html {
   }
   .enquire-btn {
     font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-wrapper {
+    margin: 0;
+    padding: 0 4vw;
+  }
+  .about-wrapper h2 {
+    margin-bottom: 7vh;
+  }
+  .about-intro p {
+    font-size: 2.2rem;
+    margin-bottom: 4vh;
+  }
+  .about-intro {
+    align-items: center;
+  }
+  .about-text {
+    font-size: 1.4rem;
+    padding: 2vh 3vw;
+  }
+  .enquire-btn {
+    font-size: 0.8rem;
   }
 }
 
@@ -719,6 +801,34 @@ html {
   }
 }
 
+@media (min-width: 1024px) {
+  .product-modal-body{
+    display: flex;
+  }
+  .product-modal-content {
+    padding: 4vh 2vw;
+    width: 96vw;
+  }
+  .product-modal-close{
+    font-size: 1rem;
+  }
+  .modal-desc{
+    font-size: 1.1rem;
+    margin-top: 4vh;
+  }
+  .modal-product-info{
+    padding: 3vh 4vw;
+  }
+  .modal-manufacturer{
+    font-size: 1rem;
+  }
+  .product-modal-body{
+    margin-top: 8vh;
+  }
+  
+}
+
+
 /* =========================================================
    MODAL IMAGE SLIDER
 ========================================================= */
@@ -789,6 +899,26 @@ html {
   .slider-btn i {
     font-size: 2rem;
   }
+}
+
+@media (min-width: 1024px) {
+  .modal-slider{
+    width: 100%;
+  }
+  .slider-track{
+    width: 100%;
+  }
+  .slide{
+    width: 50%;
+  }
+  .slider-btn{
+    width: 42px;
+    height: 42px;
+  }
+  .slider-btn i {
+  font-size: 0.8rem;
+  
+}
 }
 
 /* =========================================================
@@ -968,6 +1098,39 @@ html {
   }
   .footer-bottom {
     font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  #footer-bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+  #f-1 {
+    width: 9vw;
+  }
+  #f-2 {
+    width: 25vw;
+  }
+  .footer-col p {
+    font-size: 1.4rem;
+    width: 60vw;
+    margin-left: 12vw;
+  }
+  .brand {
+    margin-bottom: 5vh;
+  }
+  .footer-col h4 {
+    margin-bottom: 1.5rem;
+  }
+
+  #footer-links {
+    justify-content: space-between;
+    width: 40vw;
+  }
+  .footer-contact .contact-list li {
+    display: flex;
+    
   }
 }
 
