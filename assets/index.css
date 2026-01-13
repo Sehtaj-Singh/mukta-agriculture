@@ -3,6 +3,24 @@
   padding: 0;
 }
 
+a,
+button {
+  -webkit-tap-highlight-color: transparent; /* Mobile tap flash */
+  outline: none;
+}
+
+a:focus,
+a:active,
+button:focus,
+button:active {
+  outline: none;
+  box-shadow: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 /* =========================================================
    HEADER (GLASSMORPHISM)
 ========================================================= */
@@ -276,7 +294,6 @@
 
 .products-grid {
   display: grid;
-  
 }
 
 .product-card {
@@ -294,7 +311,7 @@
   border-radius: 14px;
   margin-bottom: 1rem;
 }
-.products-section a{
+.products-section a {
   text-decoration: none;
 }
 
@@ -318,13 +335,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.price {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 0.95rem;
-  color: #1f7a3f;
 }
 
 .enquire-btn {
@@ -351,14 +361,14 @@
   }
 
   .products-grid {
-  display: grid;
-}
+    display: grid;
+  }
 
   .product-card {
     margin-left: 3vw;
     width: 38vw;
   }
-  .product-card h3{
+  .product-card h3 {
     font-size: 1.5rem;
   }
   .product-card p {
@@ -437,7 +447,7 @@
     font-size: 1rem;
   }
   .about-section {
-    padding: 5vh 0;
+    padding: 10vh 0;
   }
 
   .about-intro p {
@@ -452,6 +462,9 @@
   }
   .about-text {
     font-size: 1.4rem;
+  }
+  .enquire-btn {
+    font-size: 1.2rem;
   }
 }
 
@@ -581,7 +594,7 @@
   .close-btn {
     font-size: 2rem;
   }
-  .mobile-nav-links a{
+  .mobile-nav-links a {
     font-size: 1.5rem;
   }
 }
@@ -590,7 +603,6 @@
   .mobile-nav {
     display: none;
   }
-  
 }
 
 /* =========================================================
@@ -656,6 +668,13 @@
 .product-modal-body {
   min-height: 25vh;
 }
+@media (min-width: 768px) {
+  .product-modal-close {
+    font-size: 2.1rem;
+    top: 24px;
+    right: 24px;
+  }
+}
 
 /* =========================================================
    MODAL IMAGE SLIDER
@@ -663,13 +682,13 @@
 .modal-slider {
   position: relative;
   width: 100%;
-  height: 32vh;
   overflow: hidden;
 }
 
 .slider-track {
   display: flex;
   width: 100%;
+  height: auto;
   aspect-ratio: 1536/1024;
   margin-top: 3vh;
   transition: transform 0.35s ease;
@@ -677,7 +696,7 @@
 
 .slide {
   min-width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: contain;
 }
 
@@ -692,7 +711,7 @@
   position: absolute;
   top: 60%;
   transform: translateY(-50%);
-  background: rgba(255, 255, 255, 0.75);
+  background: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(10px);
   border: none;
   width: 42px;
@@ -717,6 +736,16 @@
 
 .slider-btn.next {
   right: 10px;
+}
+
+@media (min-width: 768px) {
+  .slider-btn{
+    width: 72px;
+  height: 72px;
+  }
+  .slider-btn i {
+  font-size: 2rem;
+}
 }
 
 /* =========================================================
@@ -927,4 +956,17 @@
 .whatsapp-float a:hover {
   transform: translateY(-2px);
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 768px) {
+  .whatsapp-float a {
+    width: 86px;
+    font-size: 2.3rem;
+    height: 86px;
+  }
+  .whatsapp-float {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+  }
 }
