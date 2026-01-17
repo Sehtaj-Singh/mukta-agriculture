@@ -162,8 +162,8 @@ html {
   background: rgba(255, 255, 255,1);
   border-radius: 14px;
   border: 1px solid rgba(255, 255, 255, 0.35);
-  box-shadow: 3px 3px 24px rgba(0, 0, 0, 0.522),
-    inset 1px 1px 12px rgba(255, 255, 255, 0.822);
+  box-shadow: 3px 3px 24px rgba(0, 0, 0, 0.601),
+    inset 2px 2px 12px rgba(255, 255, 255, 0.962);
   font-family: "Inter", sans-serif;
 }
 
@@ -178,7 +178,7 @@ html {
 
 #p-1 {
   color: #176332;
-  font-size: 2.2vh;
+  font-size: 2vh;
   font-family: "Poppins", sans-serif;
 }
 
