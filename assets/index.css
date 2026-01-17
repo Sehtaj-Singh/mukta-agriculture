@@ -159,18 +159,25 @@ html {
   width: 80vw;
   padding: 1.2vh 4vw;
   margin-left: 6vw;
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(30px);
-  -webkit-backdrop-filter: blur(14px);
+  background: rgba(255, 255, 255,1);
   border-radius: 14px;
   border: 1px solid rgba(255, 255, 255, 0.35);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12),
-    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  box-shadow: 3px 3px 24px rgba(0, 0, 0, 0.522),
+    inset 1px 1px 12px rgba(255, 255, 255, 0.822);
   font-family: "Inter", sans-serif;
 }
 
+.hero-para::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.2;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
 #p-1 {
-  color: #1f7a3f;
+  color: #176332;
   font-size: 2.2vh;
   font-family: "Poppins", sans-serif;
 }
