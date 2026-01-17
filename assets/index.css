@@ -148,6 +148,7 @@ html {
 
 .hero-image img {
   width: 100vw;
+  margin-top: 3vh;
   height: auto;
   display: block;
 }
@@ -156,9 +157,9 @@ html {
   position: absolute;
   bottom: 2vh;
   width: 80vw;
-  padding: 1.6vh 4vw;
+  padding: 1.2vh 4vw;
   margin-left: 6vw;
-  background: rgba(255, 255, 255, 0.818);
+  background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(14px);
   border-radius: 14px;
@@ -171,14 +172,9 @@ html {
 #p-1 {
   color: #1f7a3f;
   font-size: 2.2vh;
-  margin-bottom: 0.5vh;
   font-family: "Poppins", sans-serif;
 }
 
-#p-2 {
-  color: #4b4b4b;
-  font-size: 1.6vh;
-}
 
 .hero-content {
   position: relative;
