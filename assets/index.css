@@ -159,7 +159,7 @@ html {
   bottom: 0vh;
   width: 80vw;
   bottom: 0.5vh;
-  margin-left: 6vw;
+  margin-left: 3vw;
   background: rgba(255, 255, 255,1);
   border-radius: 14px;
   font-family: "Inter", sans-serif;
@@ -181,6 +181,7 @@ html {
   letter-spacing: 3px;
   font-family: "Poppins", sans-serif;
   font-family: "Oswald", sans-serif;
+  font-weight: 600;
 }
 
 .hero-icons {
@@ -964,7 +965,7 @@ html {
 
 .footer-icons .social {
   color: #e5e7eb;
-  font-size: 3vh;
+  font-size: 3.5vh;
 }
 
 
